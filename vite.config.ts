@@ -16,7 +16,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         dashboard: resolve(__dirname, 'src/pages/dashboard/index.html'),
-        settings: resolve(__dirname, 'src/pages/settings/index.html'),
       },
     },
   },
