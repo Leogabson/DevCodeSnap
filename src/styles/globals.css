@@ -27,8 +27,7 @@
   }
 
   /* Dark theme is default for DevCodeSnap (Stitch developer visual direction) */
-  .dark,
-  :root {
+  .dark {
     --background: 240 10% 4%;
     --foreground: 0 0% 98%;
     --card: 240 10% 7%;
