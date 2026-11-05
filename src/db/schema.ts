@@ -36,7 +36,6 @@ export interface Tag {
 export interface SnippetTag {
   snippetId: string;
   tagId: string;
-  createdAt: number;
 }
 
 /**

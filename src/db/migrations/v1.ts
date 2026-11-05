@@ -7,5 +7,5 @@ export const V1_STORES = {
   snippets: 'id, collectionId, language, isFavorite, createdAt, updatedAt',
   collections: 'id, &normalizedName, createdAt, updatedAt',
   tags: 'id, &normalizedName, createdAt',
-  snippetTags: '[snippetId+tagId], snippetId, tagId, createdAt',
+  snippetTags: '[snippetId+tagId], snippetId, tagId',
 } as const;

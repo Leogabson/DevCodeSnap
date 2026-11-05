@@ -142,7 +142,6 @@ describe('DevCodeSnap Database Foundation (Dexie / IndexedDB)', () => {
       const snippetTag: SnippetTag = {
         snippetId: 'snip-100',
         tagId: 'tag-200',
-        createdAt: Date.now(),
       };
 
       await db.snippetTags.add(snippetTag);
@@ -266,11 +265,10 @@ describe('DevCodeSnap Database Foundation (Dexie / IndexedDB)', () => {
     });
 
     it('allows indexed relationship queries on snippetTags', async () => {
-      const now = Date.now();
       await db.snippetTags.bulkAdd([
-        { snippetId: 'snip-A', tagId: 'tag-1', createdAt: now },
-        { snippetId: 'snip-A', tagId: 'tag-2', createdAt: now },
-        { snippetId: 'snip-B', tagId: 'tag-1', createdAt: now },
+        { snippetId: 'snip-A', tagId: 'tag-1' },
+        { snippetId: 'snip-A', tagId: 'tag-2' },
+        { snippetId: 'snip-B', tagId: 'tag-1' },
       ]);
 
       // Query all tags for snippet-A
