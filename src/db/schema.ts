@@ -9,6 +9,8 @@ export interface Snippet {
   language: string;
   description?: string;
   sourceUrl?: string;
+  sourceTitle?: string;
+  captureMethod?: string;
   collectionId: string | null;
   isFavorite?: boolean;
   createdAt: number;
